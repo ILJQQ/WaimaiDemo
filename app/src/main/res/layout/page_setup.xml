@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:id="@+id/llSetupHeader"
+                android:background="#ff4455"
+                android:layout_height="150dp">
+
+                <ImageView
+                    app:srcCompat="@drawable/setup_icon"
+                    android:id="@+id/ivSetUp"
+                    android:layout_marginLeft="340dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="26dp"
+                    android:layout_height="22dp" />
+
+                <TextView
+                    android:text="登录/注册"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/tvSetLog"
+                    android:background="@drawable/setup_btn"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textColor="#ff4455"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="30dp"
+                    android:paddingTop="10dp" />
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lvTableOne"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/background_light"
+                android:layout_height="122dp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lvTableTwo"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/background_light"
+                android:layout_height="122dp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/lvTableThree"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/background_light"
+                android:layout_height="81dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/llCommonQuestion">
+                <ImageView
+                    android:id="@+id/ivItemIcon"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    app:srcCompat="@drawable/question"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSetTitle"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:textColor="?attr/actionModeSplitBackground"
+                    android:text="常见问题"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivItemArrow"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/llServiceNum">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/phone_icon"
+                    android:id="@+id/ivPhoneIcon"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="9dp" />
+
+                <TextView
+                    android:text="客服400-011-7777"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvPhoneNum"
+                    android:layout_weight="1"
+                    android:textColor="#ff4455"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/llPadding"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
